@@ -13,6 +13,13 @@ DEPLOYING A WEB APPLICATION ON AWS
   
 Learn how to deploy a simple web application using Amazon Web Services (AWS). This project will teach the basics of cloud deployment, including setting up a server and configuring the web application.
 
+<img width="916" alt="image" src="https://github.com/luciyaroshni/CODETECH-Task1/assets/75429068/45d5c2bd-4789-43dc-acc9-ec28ba6eecd1"><br>
+
+
+<img width="925" alt="image" src="https://github.com/luciyaroshni/CODETECH-Task1/assets/75429068/c3610fde-f02a-46a9-9042-0cc6e5b0d122"><br>
+
+
+
 **Key Activities:**  
 
 - Create an AWS Account:
