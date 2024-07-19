@@ -1,0 +1,221 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333; /* Darker text color for contrast */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('Wisdom_reading_home.jpg'); /* Replace with your background image URL */
+    background-size: cover; /* Cover entire background */
+    background-position: center; /* Center the background image */
+}
+
+header {
+    background-color: #001f3f; /* Navy blue background for the header */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+header .logo i {
+    margin-right: 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Align content to the sides */
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+}
+
+.book-titles {
+    max-width: 40%;
+    color: white; /* White text for contrast against dark background */
+}
+
+.book-titles h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.book-titles ul {
+    list-style: none;
+    padding: 0;
+}
+
+.book-titles li {
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white background */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-titles li img {
+    width: 50px; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.book-titles li span {
+    flex: 1;
+}
+
+.explore-section {
+    width: 100%; /* Full width of the main content area */
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff; /* White text color */
+    position: relative;
+}
+
+.explore-section h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.explore-section h1 span {
+    display: block;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+.explore-section .cn {
+    width: 160px;
+    height: 40px;
+    background: #023b67; /* Darker blue background for the button */
+    border: none;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+    color: white; /* Button text color */
+}
+
+.explore-section .cn a {
+    color: white; /* Button text color */
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.explore-section .cn:hover {
+    background-color: #001f3f; /* Darker navy blue for hover effect */
+}
+
+.container {
+    width: 100%;
+    max-width: 400px; /* Limit the maximum width of the login box */
+    margin: auto; /* Center the login box horizontally */
+    padding: 25px;
+    background: rgba(248, 247, 247, 0.8); /* Slightly transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Adjusted for better alignment */
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #001f3f; /* Dark blue color for the heading */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #001f3f; /* Dark blue color for labels */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0f0f0; /* Light gray background for input fields */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #001f3f; /* Navy blue color for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #001a35; /* Darker navy blue for hover effect */
+}
+
+.signup-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.signup-link p {
+    margin: 0;
+}
+
+.signup-link a {
+    color: #001f3f; /* Same navy blue color as the button */
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        margin: 20px;
+        padding: 15px;
+    }
+
+    .book-titles {
+        margin-bottom: 20px;
+    }
+
+    .input-group input {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
